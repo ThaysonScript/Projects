@@ -1,0 +1,302 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font01: 'Montserrat', sans-serif;
+    --font02: 'Fraunces', serif;
+
+    --color_primary01: rgb(60, 128, 103);
+    --color_primary02: rgb(242, 235, 227);
+    --color_primary03: rgb(36, 173, 120);
+
+    --color_neutral01: rgb(28, 35, 43);
+    --color_neutral02: rgb(108, 114, 137);
+    --color_neutral03: rgb(255, 255, 255);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: var(--color_primary02);
+}
+
+header {
+    display: flex;
+
+    margin-top: 70px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+
+    max-width: 1440px;
+    max-height: 1440px;
+
+    /* border: 3px solid red; */
+}
+
+/* IMG */
+header > section.imagem_perfume {
+    display: flex;
+}
+
+header > section.imagem_perfume > img {
+    max-width: 400px;
+    max-height: 700px;
+
+    border-radius: 10px 0px 0px 10px;
+}
+
+header > section.header_content {
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--color_neutral03);
+
+    padding-right: 20px;
+
+    max-width: 400px;
+    max-height: 700px;
+
+    border: 1px solid red;
+}
+
+header > section.header_content > h1.titulo_perfume {
+    margin-top: 30px;
+    margin-left: 40px;
+
+    font-family: var(--font01);
+
+    font-weight: 100;
+    font-size: 20px;
+
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    color: var(--color_neutral02);
+}
+
+header > section.header_content > h2.titulo_principal {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+
+    font-size: 50px;
+    font-family: var(--font02);
+
+    max-width: 300px;
+}
+
+header > section.header_content > p.paragrafo {
+    margin-left: 40px;
+    margin-right: 30px;
+
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 2px;
+
+    font-family: var(--font01);
+    line-height: 25px;
+
+    color: var(--color_neutral02);
+}
+
+header > section.header_content > section.precos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 40px;
+
+    max-width: 250px;
+    max-height: 80px;
+}
+
+header > section.header_content > section.precos > h2.preco_final {
+    font-size: 40px;
+
+    color: var(--color_primary01);
+
+    font-family: var(--font02);
+}
+
+header > section.header_content > section.precos > h3.preco_riscado {
+    text-decoration: line-through;
+    font-weight: 100;
+    font-family: var(--font01);
+    color: var(--color_neutral02);
+}
+
+header > section.header_content > section.comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-left: 40px;
+
+    max-height: 70px;
+    max-width: 300px;
+
+    background-color: var(--color_primary01);
+    border-radius: 10px;
+}
+
+header > section.header_content > section.comprar:hover {
+    cursor: pointer;
+    background-color: var(--color_primary03);
+}
+
+header > section.header_content > section.comprar > p.adicionar_carrinho {
+    margin-left: 15px;
+
+    color: var(--color_neutral03);
+
+    font-family: var(--font01);
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+    header {
+        display: inline;
+    
+        margin-top: 10px;
+    
+        margin-left: 200px;
+        margin-right: 200px;
+    
+        max-width: 325px;
+        max-height: 325px;
+    }
+    
+    /* IMG */
+
+    header > section.imagem_perfume {
+        height: 375px;
+    }
+
+
+    header > section.imagem_perfume > img {
+        width: 375px;
+        max-height: 375px;
+    
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    header > section.header_content {
+        border-radius: 0px 0px 10px 10px;
+        background-color: var(--color_neutral03);
+    
+        max-width: 375px;
+        max-height: 700px;
+
+        padding-bottom: 10px;
+    }
+    
+    header > section.header_content > h1.titulo_perfume {
+        margin-top: 0px;
+        margin-left: 40px;
+        padding-top: 15px;
+    
+        font-family: var(--font01);
+    
+        font-weight: 100;
+        font-size: 20px;
+    
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    
+        color: var(--color_neutral02);
+    }
+    
+    header > section.header_content > h2.titulo_principal {
+        display: flex;
+        margin-top: 0px;
+        margin-left: 40px;
+        margin-bottom: 0px;
+    
+        font-size: 50px;
+        font-family: var(--font02);
+    
+        max-width: 300px;
+    }
+    
+    header > section.header_content > p.paragrafo {
+        margin-left: 40px;
+        margin-right: 30px;
+    
+        font-size: 15px;
+        font-weight: 200;
+        letter-spacing: 2px;
+    
+        font-family: var(--font01);
+        line-height: 25px;
+    
+        color: var(--color_neutral02);
+    }
+    
+    header > section.header_content > section.precos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        margin-left: 40px;
+    
+        max-width: 250px;
+        max-height: 80px;
+    }
+    
+    header > section.header_content > section.precos > h2.preco_final {
+        font-size: 40px;
+    
+        color: var(--color_primary01);
+    
+        font-family: var(--font02);
+    }
+    
+    header > section.header_content > section.precos > h3.preco_riscado {
+        text-decoration: line-through;
+        font-weight: 100;
+        font-family: var(--font01);
+        color: var(--color_neutral02);
+    }
+    
+    header > section.header_content > section.comprar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+    
+        max-height: 70px;
+        max-width: 300px;
+    
+        background-color: var(--color_primary01);
+        border-radius: 10px;
+    }
+    
+    header > section.header_content > section.comprar:hover {
+        cursor: pointer;
+        background-color: var(--color_primary03);
+    }
+    
+    header > section.header_content > section.comprar > p.adicionar_carrinho {
+        margin-left: 15px;
+    
+        color: var(--color_neutral03);
+    
+        font-family: var(--font01);
+    }
+}

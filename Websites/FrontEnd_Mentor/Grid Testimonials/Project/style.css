@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/*
+    - Mobile: 375px
+    - Desktop: 1440px
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+:root {
+    /* PRIMARY COLOR */
+    --color01: hsl(263, 55%, 52%);
+    --color02: hsl(217, 19%, 35%);
+    --color03: hsl(219, 29%, 14%);
+    --color04: rgb(255, 255, 255);
+
+    /* COLORS NEUTRAL */
+    --neutral01: rgb(207, 207, 207);
+    --neutral02: rgb(236, 242, 248);
+
+    /* FONT */
+    --font: 'Barlow Semi Condensed', sans-serif;
+
+    /*
+        1. "Verified Graduate" has the same color as the person's name with 50% opacity
+
+        2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+    */
+}
+
+#flex_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+    height: 100vh;
+}
+
+#flex_container > #grid_content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+
+    width: 90%;
+    height: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRID 1 */
+#flex_container > #grid_content > .grid01 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    background-color: var(--color01);
+    color: white;
+
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-size: 125px;
+
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.312);
+}
+
+#flex_container > #grid_content > .grid01 > .rodape {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#flex_container > #grid_content > .grid01 > .rodape > img {
+    padding: 2px;
+    border-radius: 100px;
+
+    width: 40px;
+
+    background-color: white;
+}
+
+#flex_container > #grid_content > .grid01 > .rodape > .info {
+    margin-left: 15px;
+}
+
+#flex_container > #grid_content > .grid01 > .rodape > .info > h1 {
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+#flex_container > #grid_content > .grid01 > .rodape > .info > p {
+    color: var(--neutral01);
+}
+
+#flex_container > #grid_content > .grid01 > h2 {
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+#flex_container > #grid_content > .grid01 > p {
+    margin-top: 30px;
+
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--neutral01);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* GIRD 2 */
+#flex_container > #grid_content > .grid02 {
+    border-radius: 10px;
+
+    padding: 20px;
+
+    background-color: var(--color02);
+    color: white;
+
+    width: 350px;
+
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.312);
+}
+
+#flex_container > #grid_content > .grid02 > .rodape {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#flex_container > #grid_content > .grid02 > .rodape > img {
+    padding: 2px;
+    border-radius: 100px;
+
+    width: 40px;
+
+    background-color: white;
+}
+
+#flex_container > #grid_content > .grid02 > .rodape > .info {
+    margin-left: 15px;
+}
+
+#flex_container > #grid_content > .grid02 > .rodape > .info > h1 {
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+#flex_container > #grid_content > .grid02 > .rodape > .info > p {
+    color: var(--neutral01);
+}
+
+#flex_container > #grid_content > .grid02 > h2 {
+    margin-top: 20px;
+    font-size: 27px;
+}
+
+#flex_container > #grid_content > .grid02 > p {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--neutral01);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRID 3 */
+#flex_container > #grid_content > .grid03 {
+
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    width: 300px;
+
+    background-color: var(--color04);
+
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.312);
+}
+
+#flex_container > #grid_content > .grid03 > .rodape {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#flex_container > #grid_content > .grid03 > .rodape > img {
+    padding: 2px;
+    border-radius: 100px;
+
+    width: 40px;
+
+    background-color: white;
+}
+
+#flex_container > #grid_content > .grid03 > .rodape > .info {
+    margin-left: 15px;
+}
+
+#flex_container > #grid_content > .grid03 > .rodape > .info > h1 {
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+#flex_container > #grid_content > .grid03 > .rodape > .info > p {
+    color: var(--color02);
+}
+
+#flex_container > #grid_content > .grid03 > h2 {
+    margin-top: 20px;
+    font-size: 27px;
+}
+
+#flex_container > #grid_content > .grid03 > p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--color02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRID 4 */
+#flex_container > #grid_content > .grid04 {
+    border-radius: 10px;
+
+    padding: 40px;
+
+    background-color: var(--color04);
+
+    width: 350px;
+
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.312);
+}
+
+#flex_container > #grid_content > .grid04 > .rodape {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#flex_container > #grid_content > .grid04 > .rodape > img {
+    padding: 2px;
+    border-radius: 100px;
+
+    width: 40px;
+
+    background-color: white;
+}
+
+#flex_container > #grid_content > .grid04 > .rodape > .info {
+    margin-left: 15px;
+}
+
+#flex_container > #grid_content > .grid04 > .rodape > .info > h1 {
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+#flex_container > #grid_content > .grid04 > .rodape > .info > p {
+    color: var(--color02);
+}
+
+#flex_container > #grid_content > .grid04 > h2 {
+    margin-top: 20px;
+
+    width: 200px;
+}
+
+#flex_container > #grid_content > .grid04 > p {
+    margin-top: 20px;
+    font-size: 17px;
+    width: 250px;
+    line-height: 25px;
+    color: var(--color02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GRID 5 */
+#flex_container > #grid_content > .grid05 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    border-radius: 10px;
+
+    padding: 40px;
+
+    background-color: var(--color03);
+
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.312);
+}
+
+#flex_container > #grid_content > .grid05 > .rodape {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#flex_container > #grid_content > .grid05 > .rodape > img {
+    padding: 2px;
+    border-radius: 100px;
+
+    width: 40px;
+
+    background-color: white;
+}
+
+#flex_container > #grid_content > .grid05 > .rodape > .info {
+    margin-left: 15px;
+}
+
+#flex_container > #grid_content > .grid05 > .rodape > .info > h1 {
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+    color: white;
+}
+
+#flex_container > #grid_content > .grid05 > .rodape > .info > p {
+    color: var(--neutral01);
+}
+
+#flex_container > #grid_content > .grid05 > h2 {
+    margin-top: 20px;
+    font-size: 22px;
+
+    color: white;
+}
+
+#flex_container > #grid_content > .grid05 > p {
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--neutral01);
+}

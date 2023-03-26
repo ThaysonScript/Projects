@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --color_main: rgb(9, 11, 26);
+    --color_card: rgb(27, 25, 56);
+    --color_aceent: rgb(170, 92, 219);
+
+    --color01: rgb(255, 255, 255);
+    --color02: rgba(255, 255, 255, 0.75);
+    --color03: rgba(255, 255, 255, 0.6);
+
+    --font01: 'Inter', sans-serif;
+    --font02: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: var(--color_main);
+    color: var(--color01);
+}
+
+#header_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    border: 1px solid red;
+}
+
+#header_content {
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+
+    width: 100%;
+    height: 500px;
+
+    background-color: var(--color_card);
+
+    border: 1px solid red;
+}
+
+#header_content > .principal {
+    margin-top: 80px;
+    margin-left: 80px;
+    width: 40%;
+    height: 40%;
+
+    border: 1px solid red;
+}
+
+#header_content > .principal > h1 {
+    font-size: 40px;
+}
+
+#header_content > .principal > p {
+    margin-top: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+
+    width: 400px;
+    height: 80px;
+
+    color: var(--color03);
+
+    border: 1px solid red;
+}
+
+#header_content > .components {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-left: 80px;
+
+    width: 40%;
+    height: 40%;
+
+    border: 1px solid red;
+}
+
+#header_content > .components > .comp {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: 86px;
+    
+    height: 60px;
+
+    border: 1px solid red;
+}
+
+#header_content > .components > .comp > p {
+    margin-top: 5px;
+    color: var(--color03);
+}
+
+#header_content > .image {
+    display: flex;
+    float: right;
+    position: relative;
+    bottom: 98%;
+
+    height: 500px;
+
+    background-color: var(--color_aceent);
+
+    border: 1px solid red;
+}
+
+#header_content > .image > img {
+    opacity: 75%;
+
+    border-radius: 0px 10px 10px 0px;
+}

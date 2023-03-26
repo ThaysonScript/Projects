@@ -1,0 +1,10 @@
+@media screen and (max-width: 375px) {
+    section.section_content {
+        max-width: 376px;
+    }
+
+    section.section_content > img {
+        max-width: 378px;
+        height: 300px;
+    } 
+}
