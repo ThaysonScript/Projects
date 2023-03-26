@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font01);
+}
+
+:root {
+    --color01: white;
+    --color02: #180F4A;
+    --color03: #FF2978;
+    --color04: rgb(90, 90, 90);
+
+    --font01: 'Roboto', sans-serif;
+    --font02: 'Lobster', cursive;
+
+    --linear: linear-gradient(180deg,#180F4A,#090422,black);
+}
+
+/* ESTILO E CONFIGURACOES DA NAV */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-bottom: 4px solid rgb(211, 211, 211);
+    padding: 30px;
+
+    width: 100%;
+
+    position: fixed;
+
+    background-color: var(--color01);
+}
+
+/* LOGO DO MENU */
+.logo_nav {
+    margin-left: 50px;
+    width: 400px;
+    font-size: 35px;
+}
+
+.logo_nav > h1 {
+    color: var(--color02);
+    font-family: var(--font02);
+}
+
+/* MENU */
+.menu_nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.menu_nav > a {
+    padding: 20px;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    color: var(--color02);
+}
+
+.menu_nav > a:hover {
+    padding: 20px;
+
+    color: var(--color03);
+
+    border-top: 4px solid var(--color02);
+}
+
+/* BOTAO FALE CONOSCO */
+.extra_botao {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+
+    width: 400px;
+}
+
+.extra_botao > #botao {
+    padding: 15px 40px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    background-color: var(--color02);
+    color: var(--color01);
+}
+
+.extra_botao > #botao:hover {
+    background-color: var(--color03);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+
+    height: 75vh;
+}
+
+.conteudos {
+    margin-top: 100px;
+    margin-left: 80px;  /* tamanho da caixa de texto */
+}
+
+.conteudos > .primeiro_h2 {
+    margin-top: 150px;
+
+    width: 100%;
+
+    font-size: 25px;
+    letter-spacing: 15px;
+
+    color: var(--color02);
+}
+
+.conteudos > .segundo_h2 {
+    width: 100%;
+
+    font-size: 90px;
+
+    color: var(--color02);
+}
+
+.conteudos > .paragrafo_header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 92%;
+
+    font-size: 17px;
+    text-align: justify;
+
+    color: var(--color04);
+}
+
+/* BOTAO CONTRATE AGORA */
+.conteudos > #botao_contato {
+    padding: 15px 20px;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 20px;
+    
+    color: var(--color01);
+    background-color: var(--color03);
+}
+
+.conteudos > #botao_contato:hover {
+    background-color: var(--color02);
+}
+
+/* IMAGEM DO HEADER */
+.imagem_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 80px;     /* tamanho da caixa da imagem */
+}
+
+.imagem_header > img {
+    margin-top: 250px;
+    width: 650px;
+    height: 600px;
+}
+
+/* MAIN */
+main {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.main_h2 {
+    margin-top: 130px;
+    padding: 10px;
+
+    text-align: center;
+    font-size: 45px;
+    font-family: var(--font02);
+
+    color: var(--color02);
+}
+
+.servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px;
+
+    height: 95vh;
+}
+
+.cards {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    text-align: center;
+
+    width: 300px;
+    height: 500px;
+
+    border: 1px solid var(--color03);
+}
+
+.cards:hover {
+    background-color: var(--color03);
+    color: var(--color01);
+}
+
+.cards > img {
+    display: flex;
+    flex-flow: column wrap;
+
+    margin: auto;
+
+    width: 50px;
+    height: 50px;
+}
+
+.texto_card {
+    display: flex;  /* alterar logo para flex*/
+    flex-flow: column wrap;
+    
+    height: 448px;
+}
+
+.texto_card > h3 {
+    text-align: center;
+}
+
+.texto_card > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 350px;
+
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.texto-oculto {
+    display: none;  /* colocar como none apos alteracao final / ok */
+    flex-flow: column wrap;
+
+    height: 448px;
+}
+
+.texto-oculto > h3 {
+    margin-top: 50px;
+}
+
+.texto-oculto > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 350px;
+
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.cards:hover > .texto_card {
+    display: none;
+}
+
+.cards:hover > .texto-oculto {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.cards:hover > img {
+    display: none;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-flow: column wrap;
+
+    height: 40vh;
+
+    background-image: linear-gradient(to bottom, rgb(0, 0, 163) 6%, rgb(0, 0, 55) 60%);
+
+    border-top: 5px solid var(--color03);
+}
+
+.rodape > h1 {
+    padding: 30px;
+
+    height: 100px;
+
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: var(--font02);
+
+    color: var(--color01);
+}
+
+.rodape > p {
+    margin-top: 30px;
+    padding: 30px;
+
+    height: 100px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+
+    color: var(--color01);
+}
+
+b {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+
+    color: var(--color01);
+}
+
+div {
+    position: fixed;
+    top: 77%;
+    left: 94%;
+}
+
+div > a > img {
+    width: 90px;
+}
