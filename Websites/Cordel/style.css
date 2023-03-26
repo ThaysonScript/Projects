@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: rgb(255, 243, 243);
+}
+
+header {
+    padding: 30px;
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-bottom: 15px;
+}
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+header > p > a > strong {
+    text-decoration: underline;
+}
+
+header > p > a > strong:hover {
+    color: red;
+}
+
+section.normal > p {
+    margin: 50px 0px 100px 20px;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.193);
+    border-radius: 10px;
+
+    max-width: 200px;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+section#foto1 {
+    background-image: url('imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: white;
+
+    padding: 5px;
+}
+
+section#foto2 {
+    background-image: url('imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: white;
+
+    padding: 5px;
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer > p > a {
+    text-decoration: underline;
+    color: white;
+}
+
+footer > p > a:hover {
+    color: red;
+}

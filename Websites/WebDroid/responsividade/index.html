@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* Responsividade / Elements*/
+            min-width: 250px;
+            max-width: 800px;
+
+            /* Centro */
+            margin: auto;
+        }
+
+        /* Responsividade img */
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque suscipit recusandae necessitatibus non, numquam iste laudantium consequatur beatae facere, tenetur excepturi repellat ex quae autem vitae dolor alias perspiciatis dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum ab, tempora consectetur illo error veritatis fugit quia placeat ipsum nesciunt delectus laborum exercitationem cum odit voluptate minus voluptatibus eaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis dolore at sapiente ad cupiditate obcaecati, aperiam veritatis praesentium aliquid delectus nisi, sit unde, neque ipsa eaque. Tenetur autem dolorem quidem!
+    </p>
+    
+    <!-- Quando tamanho ficar menor a img é trocada pela pequena -->
+    <picture>
+        <source media="(max-width: 600px)" srcset="irina-blok-pq.jpg">
+        <img src="irina-blok.jpg" alt="Irina - Block">
+    </picture>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque suscipit recusandae necessitatibus non, numquam iste laudantium consequatur beatae facere, tenetur excepturi repellat ex quae autem vitae dolor alias perspiciatis dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum ab, tempora consectetur illo error veritatis fugit quia placeat ipsum nesciunt delectus laborum exercitationem cum odit voluptate minus voluptatibus eaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis dolore at sapiente ad cupiditate obcaecati, aperiam veritatis praesentium aliquid delectus nisi, sit unde, neque ipsa eaque. Tenetur autem dolorem quidem!
+    </p>
+    </main>
+</body>
+</html>
