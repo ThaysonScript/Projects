@@ -60,3 +60,5 @@ sleep(1)
 print('Finalizando Programa...')
 
 # O Download sera arquivado na pasta onde esta o codigo!
+
+# https://www.youtube.com/live/vdXjOf6JA38?feature=share
